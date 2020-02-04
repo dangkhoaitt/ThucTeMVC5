@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace ThucHanh2MVC.Common
+namespace ThucHanh2MVC
 {
     [Serializable]
     public class UserLogin

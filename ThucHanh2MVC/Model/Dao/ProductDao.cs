@@ -50,10 +50,15 @@ namespace Model.Dao
         /// <param name="productId"></param>
         /// <param name="produt"></param>
         /// <returns></returns>
-        public List<Product> ListRelatedProduct(long productId, int produt)
+        public List<Product> ListRelatedProduct(long productId, int product)
         {
-            var product = db.Products.Find(productId);
-            return db.Products.Where(x => x.ID != productId && x.CategoryID == product.CategoryID).Take(produt).ToList();
+            var products = db.Products.Find(productId);
+            return db.Products.Where(x => x.ID != productId && x.CategoryID == products.CategoryID).Take(product).ToList();
+        }
+
+        public List<Product> ListAllProduct()
+        {
+            return db.Products.OrderByDescending(x => x.CreatedDate).ToList();
         }
 
 

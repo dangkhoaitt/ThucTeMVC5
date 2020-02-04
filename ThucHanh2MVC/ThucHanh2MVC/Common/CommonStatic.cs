@@ -7,6 +7,8 @@ namespace ThucHanh2MVC.Common
 {
     public static class CommonStatic
     {
-        public static string USER_SESSION = "USER_SESSION";
+        public const string USER_SESSION = "USER_SESSION";
+        public const string CartSession = "CartSession";
+        public static string CurrentCulture { get; set; }
     }
 }

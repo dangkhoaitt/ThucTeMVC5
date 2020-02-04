@@ -31,6 +31,7 @@ namespace ThucHanh2MVC.Areas.Admin.Controllers
                     var userSession = new UserLogin();
                     userSession.UserName = user.UserName;
                     userSession.UserID = user.ID;
+
                     Session.Add(CommonStatic.USER_SESSION, userSession);
                     return RedirectToAction("Index", "Home");
                 }

@@ -12,7 +12,7 @@ namespace Model.Dao
 
     public class UserDao
     {
-        //Tạo giá trị db ban đầu là null
+
         OnlineShopDbContext db = null;
         public UserDao()
         {
@@ -22,9 +22,27 @@ namespace Model.Dao
 
         public long Insert(User entity)
         {
+
             db.Users.Add(entity);
+
             db.SaveChanges();
             return entity.ID;
+        }
+
+        public long InsertForFacebook(User entity)
+        {
+            var user = db.Users.SingleOrDefault(x => x.UserName == entity.UserName);
+            if (user == null)
+            {
+                db.Users.Add(entity);
+
+                db.SaveChanges();
+                return entity.ID;
+            }
+            else
+            {
+                return user.ID;
+            }
         }
 
         //Thêm mới danh sách User Trả về danh sách tất cả User
@@ -110,11 +128,28 @@ namespace Model.Dao
                 db.SaveChanges();
                 return true;
             }
-            catch(Exception ex)
+            catch (Exception)
             {
                 return false;
             }
-            
+
+        }
+
+        public bool ChangeStatus(long id)
+        {
+            var user = db.Users.Find(id);
+            user.Status = !user.Status;
+            db.SaveChanges();
+            return user.Status;
+        }
+
+        public bool CheckUserName(string userName)
+        {
+            return db.Users.Count(x => x.UserName == userName) > 0;
+        }
+        public bool CheckEmail(string email)
+        {
+            return db.Users.Count(x => x.Email == email) > 0;
         }
     }
 }

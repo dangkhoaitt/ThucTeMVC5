@@ -65,5 +65,9 @@ namespace Model.EF
         public DateTime? TopHot { get; set; }
 
         public int? ViewCount { get; set; }
+
+        public int? BrandId { get; set; }
+
+        public virtual Trademark Trademark { get; set; }
     }
 }
