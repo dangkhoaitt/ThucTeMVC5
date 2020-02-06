@@ -1,0 +1,41 @@
+﻿@model List<Model.EF.ProductCategory>
+
+
+<div class="panel-group category-products" id="accordian">
+    @foreach (var item in Model.Where(x => x.ParentID == null))
+    {
+        <!--category-productsr-->
+        var child = Model.Where(x => x.ParentID == item.ID);
+        if (child.Count() > 0)
+        {
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordian" href="#@item.ID">
+                            <span class="badge pull-right"><i class="fa fa-plus"></i></span>
+                            <a href="/san-pham/@item.MetaTitle-@item.ID">@item.Name</a>
+                        </a>
+                    </h4>
+                </div>
+                <div id="@item.ID" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            <ul>
+                                @foreach (var childitem in child)
+                                {
+                                    <li><a href="#">@childitem.Name </a></li>
+                                }
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+        }
+        else
+        {
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title"><a href="/san-pham/@item.MetaTitle-@item.ID">@item.Name</a></h4>
+                </div>
+            </div>
+        }
+    }
+</div><!--/category-products-->
