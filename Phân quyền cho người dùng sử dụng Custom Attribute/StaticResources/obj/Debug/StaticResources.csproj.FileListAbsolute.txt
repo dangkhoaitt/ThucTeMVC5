@@ -1,0 +1,11 @@
+C:\Users\KHOA\source\repos\ThucHanh2MVC\StaticResources\bin\Debug\StaticResources.dll
+C:\Users\KHOA\source\repos\ThucHanh2MVC\StaticResources\bin\Debug\StaticResources.pdb
+C:\Users\KHOA\source\repos\ThucHanh2MVC\StaticResources\bin\Debug\en\StaticResources.resources.dll
+C:\Users\KHOA\source\repos\ThucHanh2MVC\StaticResources\obj\Debug\StaticResources.csprojAssemblyReference.cache
+C:\Users\KHOA\source\repos\ThucHanh2MVC\StaticResources\obj\Debug\StaticResources.Resources.resources
+C:\Users\KHOA\source\repos\ThucHanh2MVC\StaticResources\obj\Debug\StaticResources.Resources.en.resources
+C:\Users\KHOA\source\repos\ThucHanh2MVC\StaticResources\obj\Debug\StaticResources.csproj.GenerateResource.cache
+C:\Users\KHOA\source\repos\ThucHanh2MVC\StaticResources\obj\Debug\StaticResources.csproj.CoreCompileInputs.cache
+C:\Users\KHOA\source\repos\ThucHanh2MVC\StaticResources\obj\Debug\en\StaticResources.resources.dll
+C:\Users\KHOA\source\repos\ThucHanh2MVC\StaticResources\obj\Debug\StaticResources.dll
+C:\Users\KHOA\source\repos\ThucHanh2MVC\StaticResources\obj\Debug\StaticResources.pdb
