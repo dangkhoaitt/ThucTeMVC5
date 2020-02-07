@@ -1,0 +1,6 @@
+C:\Users\KHOA\source\repos\ThucHanh2MVC\Common2\bin\Debug\Common2.dll
+C:\Users\KHOA\source\repos\ThucHanh2MVC\Common2\bin\Debug\Common2.pdb
+C:\Users\KHOA\source\repos\ThucHanh2MVC\Common2\obj\Debug\Common2.csprojAssemblyReference.cache
+C:\Users\KHOA\source\repos\ThucHanh2MVC\Common2\obj\Debug\Common2.csproj.CoreCompileInputs.cache
+C:\Users\KHOA\source\repos\ThucHanh2MVC\Common2\obj\Debug\Common2.dll
+C:\Users\KHOA\source\repos\ThucHanh2MVC\Common2\obj\Debug\Common2.pdb
